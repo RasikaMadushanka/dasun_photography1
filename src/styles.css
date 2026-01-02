@@ -85,3 +85,164 @@
     text-align: center;
   }
 }
+/*image css*/
+ /* ✅ Slideshow images */
+  .image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeSlide 20s infinite;
+    z-index: 0;
+  }
+
+
+  /* ✅ Animate images one after the other */
+  .image-wrapper img:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+
+  .image-wrapper img:nth-of-type(2) {
+    animation-delay: 5s;
+  }
+
+  .image-wrapper img:nth-of-type(3) {
+    animation-delay: 10s;
+  }
+
+  .image-wrapper img:nth-of-type(4) {
+    animation-delay: 15s;
+  }
+  .image-wrapper img:nth-of-type(5) {
+    animation-delay: 20s;
+  }
+
+  .image-wrapper img:nth-of-type(6) {
+    animation-delay: 25s;
+  }
+
+  .image-wrapper img:nth-of-type(7) {
+    animation-delay: 30s;
+  }
+
+  .image-wrapper img:nth-of-type(8) {
+    animation-delay: 35s;
+  }
+  .image-wrapper img:nth-of-type(9) {
+    animation-delay: 40s;
+  }
+
+  .image-wrapper img:nth-of-type(10) {
+    animation-delay: 45s;
+  }
+
+  .image-wrapper img:nth-of-type(11) {
+    animation-delay: 50s;
+  }
+
+  .image-wrapper img:nth-of-type(12) {
+    animation-delay: 55s;
+  }
+  .image-wrapper img:nth-of-type(13) {
+    animation-delay: 60s;
+  }
+
+  .image-wrapper img:nth-of-type(14) {
+    animation-delay: 65s;
+  }
+
+  .image-wrapper img:nth-of-type(15) {
+    animation-delay: 70s;
+  }
+
+  /* ✅ Fade animation */
+  @keyframes fadeSlide {
+    0% {
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    30% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+ 
+
+
+  .image-wrapper .responsive-text {
+    position: relative;
+    z-index: 2;
+    /* text stays on top */
+  }
+
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+.footer h3, .footer h5 {
+  color: #d4af37; /* Gold accent */
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #d4af37;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d4af37;
+}
+
+.footer hr {
+  border-top: 1px solid #444;
+  margin: 2rem 0;
+}
+
+.footer .copyright p {
+  font-size: 0.8rem;
+  color: #888;
+}
